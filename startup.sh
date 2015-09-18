@@ -5,10 +5,11 @@ if [ -z $1 ]; then
   echo "Input the url of your cluster. Example:"
   echo "name.us-west-1.elb.amazonaws.com"
   echo ""
+elif [[ -z ! $1 ]]; then
+
+  sudo ./install.sh . $1
+
+  echo "Setup complete."
+  echo "Run 'source bin/env-setup' to get started."
+  echo ""
 fi
-
-sudo ./install.sh . $1
-
-echo "Setup complete."
-echo "Run 'source bin/env-setup' to get started."
-echo ""
