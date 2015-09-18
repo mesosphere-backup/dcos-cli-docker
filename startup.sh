@@ -6,9 +6,10 @@ if [ -z $1 ]; then
   echo "name.us-west-1.elb.amazonaws.com"
   echo ""
 elif [ ! -z $1 ]; then
-  sudo ./install.sh . $1
+  bash ./install.sh . $1
 
   echo "Setup complete."
   echo "Run 'source bin/env-setup' to get started."
   echo ""
 fi
+bash
