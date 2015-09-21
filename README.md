@@ -10,5 +10,6 @@ docker run -i -t <container namespace needed> <url>
 
 You can skip the initial setup step by specifying a different `ENTRYPOINT`.
 
-```docker run -i -t --entrypoint bash <container namespace needed>
+```
+docker run -i -t --entrypoint bash <container namespace needed>
 ```
