@@ -20,3 +20,5 @@ RUN apt-get update && apt-get -y install \
                               git \
                               findutils\
  && apt-get clean
+
+ADD https://raw.githubusercontent.com/mesosphere/docker-containers/master/dcos-debug/toolbox ./toolbox
