@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.5-slim
 MAINTAINER "Tim <tim.fall@mesosphere.io>"
 
 RUN apt-get update && apt-get install -y vim wget curl python-pip openjdk-7-jre-headless
