@@ -5,7 +5,7 @@ if [ -z $1 ]; then
   echo "Input the url of your cluster. Example:"
   echo "name.us-west-1.elb.amazonaws.com"
   echo ""
-elif [ ! -z $1 ]; then
+else
   bash ./install.sh . $1
 
   echo "Setup complete."
